@@ -2,6 +2,14 @@
 cask "routeburn" do
   version "1.0.0"
 
+  # RouteBurn is not notarized (no Apple Developer account), so macOS
+  # quarantines the download and Gatekeeper kills the unsigned binary on
+  # first run. Clear the quarantine flag after staging so the binary runs.
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{staged_path}/routeburn"]
+  end
+
   on_macos do
     on_arm do
       sha256 "0d59605f4dd5cca2b19fbdc39fa41aebe3d316fc70fefba5240e21062d24beca"
