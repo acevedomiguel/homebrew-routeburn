@@ -4,21 +4,21 @@ cask "routeburn" do
 
   on_macos do
     on_arm do
-      sha256 "437ef387efb1700645a6d46f4040b69452041ef484259c22f226eeddeb644ae7"
+      sha256 "0d59605f4dd5cca2b19fbdc39fa41aebe3d316fc70fefba5240e21062d24beca"
       url "https://github.com/acevedomiguel/routeburn/releases/download/v#{version}/routeburn_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "e0440e4be2c489e99ef5dd6d4cb561b302dca693414b054adddb3f440c5636dd"
+      sha256 "70ba13e537630c5cb5cda1f452ee60bef8f62074ffa22599e9ec203234162bed"
       url "https://github.com/acevedomiguel/routeburn/releases/download/v#{version}/routeburn_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "0ee2b0041104b7ebf27edd2c173b9220808a937f023eed3d0075ea784dc1e7e0"
+      sha256 "f620d49f9d4848d86e0a3344b345540e130c064305b4ec9c0860f73bdd73bff0"
       url "https://github.com/acevedomiguel/routeburn/releases/download/v#{version}/routeburn_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "2ab13a5444ccb7d8bd9c6b5c87fb8c0e0b19e5f89fc00605be71494188122140"
+      sha256 "e76656a8e4f5ecce5ee84cb6727efeb6549aebdf16d46c483e8664a576bc3a42"
       url "https://github.com/acevedomiguel/routeburn/releases/download/v#{version}/routeburn_#{version}_linux_amd64.tar.gz"
     end
   end
